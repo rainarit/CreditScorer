@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gVL-rf-1zp">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH6-Lh-FUa">
+                                <rect key="frame" x="115" y="215" width="184" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBoldItalic" family="Avenir Next" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Click on the &quot;Start&quot; button below to start the Credit Scorer!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkg-5e-rhn">
+                                <rect key="frame" x="36" y="258" width="343" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-w7-v8X">
+                                <rect key="frame" x="175" y="599" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="tapStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7N-qr-4Jj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Full Name:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxP-u9-9a4">
+                                <rect key="frame" x="36" y="329" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2g-ku-R18">
+                                <rect key="frame" x="36" y="367" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="StarCapitalLogo" translatesAutoresizingMaskIntoConstraints="NO" id="CAe-qy-Uwz">
+                                <rect key="frame" x="87" y="88" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c98-qd-aYi">
+                                <rect key="frame" x="166" y="329" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdM-nG-004">
+                                <rect key="frame" x="166" y="367" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYe-6I-TL5">
+                                <rect key="frame" x="36" y="405" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iOj-9M-kuY">
+                                <rect key="frame" x="166" y="405" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="taZ-l4-P2f" appends="YES" id="oNr-K8-169"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="jAk-Tu-vpU"/>
+                    <connections>
+                        <outlet property="emailField" destination="kdM-nG-004" id="ept-Wg-WcY"/>
+                        <outlet property="fullNameField" destination="c98-qd-aYi" id="VgY-ss-IO7"/>
+                        <outlet property="phoneField" destination="iOj-9M-kuY" id="a4c-Ff-s3P"/>
+                        <segue destination="22i-z0-u59" kind="push" identifier="pushToQ1" id="d7P-6b-Q0f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="taZ-l4-P2f">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="UvG-Ll-j4a"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1221.5999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Question1 View Controller-->
+        <scene sceneID="7iZ-tZ-Ous">
+            <objects>
+                <viewController id="22i-z0-u59" customClass="Question1ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SjL-co-Bat">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Berapa banyak Kartu Kredit yang Anda miliki saat ini?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZQ-Ae-MBg">
+                                <rect key="frame" x="36" y="283" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yb-Dk-6ep">
+                                <rect key="frame" x="107" y="389" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tidak Ada"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionATouched:" destination="22i-z0-u59" eventType="touchUpInside" id="hkh-u4-vsB"/>
+                                    <segue destination="Tlx-Fy-Ln0" kind="push" id="TMN-Nh-q4Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hre-c5-xRn">
+                                <rect key="frame" x="107" y="447" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1 sampai 2"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionBTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="AMo-KR-xgn"/>
+                                    <segue destination="Tlx-Fy-Ln0" kind="push" id="Hqt-HP-2ox"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkQ-QC-RO8">
+                                <rect key="frame" x="107" y="505" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3 sampai 5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionCTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="8cC-We-wtM"/>
+                                    <segue destination="Tlx-Fy-Ln0" kind="push" id="AoO-4w-sIN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFX-D8-euQ">
+                                <rect key="frame" x="107" y="563" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Lebih dari 5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="I0i-Rt-DfZ"/>
+                                    <segue destination="Tlx-Fy-Ln0" kind="push" id="5hR-GF-emQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ImH-E8-D5O"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="5aJ-dQ-WKe">
+                        <barButtonItem key="backBarButtonItem" title="Question 1" id="TuE-Ps-51L"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="optionA" destination="8Yb-Dk-6ep" id="qqR-uX-hIl"/>
+                        <outlet property="optionB" destination="hre-c5-xRn" id="jUA-cz-4pa"/>
+                        <outlet property="optionC" destination="QkQ-QC-RO8" id="iDo-hA-HYX"/>
+                        <outlet property="optionD" destination="yFX-D8-euQ" id="bRR-6V-WnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afm-WI-tks" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1989.5999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LO5-3W-bry">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gVL-rf-1zp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qID-ja-VxI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="16w-cj-xPF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rUv-3W-w1x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="-564.46776611694156"/>
+        </scene>
+        <!--Question2 View Controller-->
+        <scene sceneID="b21-5M-gMF">
+            <objects>
+                <viewController id="Tlx-Fy-Ln0" customClass="Question2ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bEZ-Mm-p9O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2. Kapan terakhir kali pinjaman Anda disetujui oleh lembaga keuangan (Bank, Multifinance/Leasing, P2P, dll)?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfd-DB-WZd">
+                                <rect key="frame" x="36" y="254" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-BN-ONZ">
+                                <rect key="frame" x="107" y="360" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tidak Ada"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionATouched:" destination="22i-z0-u59" eventType="touchUpInside" id="oWp-Ll-bF0"/>
+                                    <action selector="optionATouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="tRQ-CS-s3D"/>
+                                    <segue destination="3Tj-PY-6Yq" kind="push" id="hbW-Dq-LjM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yrs-49-fRt">
+                                <rect key="frame" x="107" y="418" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Kurang dari 6 Bulan"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionBTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="Nhb-Qp-Axi"/>
+                                    <action selector="optionBTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="P2D-Rl-fCU"/>
+                                    <segue destination="3Tj-PY-6Yq" kind="push" id="s4h-CY-dlb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS9-PQ-Nwf">
+                                <rect key="frame" x="107" y="476" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="6 bln - 2 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionCTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="cX4-m0-U7U"/>
+                                    <action selector="optionCTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="pd5-Nn-jS4"/>
+                                    <segue destination="3Tj-PY-6Yq" kind="push" id="ElC-lj-BPi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9U-AM-xFd">
+                                <rect key="frame" x="107" y="534" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2 - 5 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="RhQ-gR-fJi"/>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="aIv-cC-3KQ"/>
+                                    <segue destination="3Tj-PY-6Yq" kind="push" id="ygL-y2-RTX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DG-9N-UlE">
+                                <rect key="frame" x="107" y="592" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5 - 10 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="vYo-1I-qbP"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="IC9-0o-lt3"/>
+                                    <segue destination="3Tj-PY-6Yq" kind="push" id="DdC-tP-fNR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zlc-iM-ZJ6"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="uJU-BU-1Yj">
+                        <barButtonItem key="backBarButtonItem" title="Question 2" id="DRq-6n-8if"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="optionA" destination="zdt-BN-ONZ" id="zbJ-a6-kXy"/>
+                        <outlet property="optionB" destination="Yrs-49-fRt" id="h6A-7d-ZAg"/>
+                        <outlet property="optionC" destination="hS9-PQ-Nwf" id="ywD-ZF-y4d"/>
+                        <outlet property="optionD" destination="H9U-AM-xFd" id="IBo-no-Fx0"/>
+                        <outlet property="optionE" destination="8DG-9N-UlE" id="bKb-Qg-IEO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6H-yw-G10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2788" y="-564.46776611694156"/>
+        </scene>
+        <!--Question3 View Controller-->
+        <scene sceneID="7Ld-xF-iRo">
+            <objects>
+                <viewController id="3Tj-PY-6Yq" customClass="Question3ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qY-cp-tN7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3. Berapa jumlah total balance semua pinjaman aktif Anda selain KPR dan Kartu Kredit?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EC-TR-vIm">
+                                <rect key="frame" x="36" y="254" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2Z-Z2-2W2">
+                                <rect key="frame" x="107" y="360" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tidak Ada"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionATouched:" destination="22i-z0-u59" eventType="touchUpInside" id="4FF-kP-ud3"/>
+                                    <action selector="optionATouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="92V-F4-8HG"/>
+                                    <action selector="optionATouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="qe3-8C-goI"/>
+                                    <segue destination="pxN-DY-dCj" kind="push" id="Xgj-Ke-klt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHI-5h-fHU">
+                                <rect key="frame" x="107" y="418" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Kurang dari 10 juta"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionBTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="YSr-Aa-FWg"/>
+                                    <action selector="optionBTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="gAk-bu-M4q"/>
+                                    <action selector="optionBTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="jMw-Fb-5fG"/>
+                                    <segue destination="pxN-DY-dCj" kind="push" id="wxz-Iw-ZYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6K-GE-JGS">
+                                <rect key="frame" x="107" y="476" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="10 - 50 juta"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionCTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="0Vi-68-CbA"/>
+                                    <action selector="optionCTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="Mnk-cv-4fA"/>
+                                    <action selector="optionCTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="XTa-8v-z9M"/>
+                                    <segue destination="pxN-DY-dCj" kind="push" id="jDV-GM-UAb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gi-ck-jhg">
+                                <rect key="frame" x="107" y="534" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="50 - 100 juta"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="BCP-ys-vWR"/>
+                                    <action selector="optionDTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="LYd-t2-OoZ"/>
+                                    <action selector="optionDTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="mt1-70-reF"/>
+                                    <segue destination="pxN-DY-dCj" kind="push" id="8af-Ud-7Td"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn2-lX-Xz5">
+                                <rect key="frame" x="107" y="592" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Lebih dari 100 juta"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="nIc-tv-7JK"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="Kbq-GR-q9m"/>
+                                    <action selector="optionETouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="cOj-JK-zSg"/>
+                                    <segue destination="pxN-DY-dCj" kind="push" id="kof-6y-Pfd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zx5-Th-Ffx"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LMg-zE-5Jo">
+                        <barButtonItem key="backBarButtonItem" title="Question 3" id="ZtB-ND-ELN"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="optionA" destination="n2Z-Z2-2W2" id="fOO-ye-bjs"/>
+                        <outlet property="optionB" destination="zHI-5h-fHU" id="qlZ-HZ-tj0"/>
+                        <outlet property="optionC" destination="Q6K-GE-JGS" id="XLb-QW-TZU"/>
+                        <outlet property="optionD" destination="6gi-ck-jhg" id="t00-QS-DXQ"/>
+                        <outlet property="optionE" destination="Pn2-lX-Xz5" id="AMu-df-ISi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ztt-sc-FaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3536.8000000000002" y="-564.46776611694156"/>
+        </scene>
+        <!--Question4 View Controller-->
+        <scene sceneID="rao-np-dwR">
+            <objects>
+                <viewController id="pxN-DY-dCj" customClass="Question4ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wxi-7r-srO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4. Berapa jumlah fasilitas pinjaman aktif Anda saat ini?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Noa-dj-1an">
+                                <rect key="frame" x="36" y="225" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syB-0q-DrK">
+                                <rect key="frame" x="107" y="331" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tidak Ada"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionATouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="MEI-zs-B4k"/>
+                                    <action selector="optionATouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="PbG-Jq-uzP"/>
+                                    <action selector="optionATouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="nOg-uf-IBt"/>
+                                    <action selector="optionATouched:" destination="22i-z0-u59" eventType="touchUpInside" id="wP2-Vp-H6f"/>
+                                    <segue destination="sHz-Sd-0iV" kind="push" id="4Th-Im-o7R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQv-fu-0g8">
+                                <rect key="frame" x="107" y="389" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionBTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="5dd-d9-b8T"/>
+                                    <action selector="optionBTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="7SL-2q-HSk"/>
+                                    <action selector="optionBTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="Bs9-bA-uBc"/>
+                                    <action selector="optionBTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="XXo-le-dhL"/>
+                                    <segue destination="sHz-Sd-0iV" kind="push" id="PEA-oc-xqL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmA-3z-CoS">
+                                <rect key="frame" x="107" y="447" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="1 - 3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionCTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="38h-Gw-Y2R"/>
+                                    <action selector="optionCTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="Cgd-J2-Mt2"/>
+                                    <action selector="optionCTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="K5j-fZ-sLL"/>
+                                    <action selector="optionCTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="nqN-Aq-N7c"/>
+                                    <segue destination="sHz-Sd-0iV" kind="push" id="ld0-7u-7Sd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DUf-iJ-KLj">
+                                <rect key="frame" x="107" y="505" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3 - 5"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="7zm-RZ-E5G"/>
+                                    <action selector="optionDTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="sdR-Ed-vyL"/>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="shQ-aC-YfB"/>
+                                    <action selector="optionDTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="ypm-eu-Hyl"/>
+                                    <segue destination="sHz-Sd-0iV" kind="push" id="Evm-vn-tdE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6EH-bv-Wxd">
+                                <rect key="frame" x="107" y="563" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5 - 10"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="0xQ-0j-do5"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="0hT-0I-kXN"/>
+                                    <action selector="optionETouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="bSk-8J-HhM"/>
+                                    <action selector="optionETouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="d8i-wQ-sxH"/>
+                                    <segue destination="sHz-Sd-0iV" kind="push" id="MG8-98-Qyu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkV-ec-ii2">
+                                <rect key="frame" x="107" y="621" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Lebih dari 10"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="i0G-fv-tSQ"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="4Gw-wX-75j"/>
+                                    <action selector="optionETouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="dal-5Q-Rvw"/>
+                                    <action selector="optionFTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="i23-TM-2tA"/>
+                                    <segue destination="sHz-Sd-0iV" kind="push" id="nwF-bQ-R9Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2St-4V-pSc"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="Hyl-oZ-hpW">
+                        <barButtonItem key="backBarButtonItem" title="Question 4" id="LeC-xJ-eDU"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="optionA" destination="syB-0q-DrK" id="sIP-Af-FYV"/>
+                        <outlet property="optionB" destination="bQv-fu-0g8" id="IPR-x0-cVY"/>
+                        <outlet property="optionC" destination="KmA-3z-CoS" id="ikz-3o-dAQ"/>
+                        <outlet property="optionD" destination="DUf-iJ-KLj" id="DyH-qn-uMr"/>
+                        <outlet property="optionE" destination="6EH-bv-Wxd" id="4g8-By-sz3"/>
+                        <outlet property="optionF" destination="xkV-ec-ii2" id="UV8-3o-Ivz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGA-1S-40G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4293.6000000000004" y="-564.46776611694156"/>
+        </scene>
+        <!--Question5 View Controller-->
+        <scene sceneID="g5Q-kD-CSt">
+            <objects>
+                <viewController id="sHz-Sd-0iV" customClass="Question5ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XQx-yD-Dmo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5. Dari semua fasilitas pinjaman Anda yang aktif, pinjaman Anda yang terlama adalah?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nO-hE-FRM">
+                                <rect key="frame" x="36" y="225" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVP-58-MDo">
+                                <rect key="frame" x="107" y="331" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tidak Ada"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionATouched:" destination="22i-z0-u59" eventType="touchUpInside" id="Dhh-eE-Nqj"/>
+                                    <action selector="optionATouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="JC5-7C-vNc"/>
+                                    <action selector="optionATouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="a5p-ma-PWm"/>
+                                    <action selector="optionATouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="pwV-MQ-RBX"/>
+                                    <action selector="optionATouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="rxQ-OB-LML"/>
+                                    <segue destination="JaM-Bb-KBc" kind="push" id="MKg-rw-sDc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yU-X9-fn7">
+                                <rect key="frame" x="107" y="389" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Kurang dari 6 Bulan"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionBTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="Egd-hU-NJh"/>
+                                    <action selector="optionBTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="VY7-gY-0y1"/>
+                                    <action selector="optionBTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="hop-jJ-oGm"/>
+                                    <action selector="optionBTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="vmO-hX-g9d"/>
+                                    <action selector="optionBTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="wFr-Oa-fef"/>
+                                    <segue destination="JaM-Bb-KBc" kind="push" id="u8O-um-Yg5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p6m-U6-el9">
+                                <rect key="frame" x="107" y="447" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="6 bln - 2 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionCTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="6Gv-6Y-6d8"/>
+                                    <action selector="optionCTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="EOu-e5-5mZ"/>
+                                    <action selector="optionCTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="JSh-Pc-xEz"/>
+                                    <action selector="optionCTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="ddK-AS-FkZ"/>
+                                    <action selector="optionCTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="fb6-SB-RiF"/>
+                                    <segue destination="JaM-Bb-KBc" kind="push" id="ZNc-pZ-hHb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83y-a1-Mcc">
+                                <rect key="frame" x="107" y="505" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2 - 5 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="91j-q6-0VM"/>
+                                    <action selector="optionDTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="Dbf-mW-Gcy"/>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="Kkz-2c-bn5"/>
+                                    <action selector="optionDTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="P0E-3t-dK3"/>
+                                    <action selector="optionDTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="eDv-G8-tIs"/>
+                                    <segue destination="JaM-Bb-KBc" kind="push" id="q9T-81-pUL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9P-3J-k6x">
+                                <rect key="frame" x="107" y="563" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="5 - 10 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="FzN-hW-sGw"/>
+                                    <action selector="optionETouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="Fcz-eg-Fmj"/>
+                                    <action selector="optionETouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="Lkb-g2-ter"/>
+                                    <action selector="optionETouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="hYP-iy-FP8"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="llF-9J-Vqc"/>
+                                    <segue destination="JaM-Bb-KBc" kind="push" id="F5u-RB-Wjm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z4W-UT-Nji">
+                                <rect key="frame" x="107" y="621" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Lebih dari 10 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="i7l-D8-ekz"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="Mgq-iX-Cvu"/>
+                                    <action selector="optionETouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="gjM-Cm-cBB"/>
+                                    <action selector="optionFTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="Xxw-i1-8RH"/>
+                                    <action selector="optionFTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="sHq-GW-7Mo"/>
+                                    <segue destination="JaM-Bb-KBc" kind="push" id="RIU-yP-SXc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="q8a-pC-IEq"/>
+                    </view>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="a7W-V0-vgQ">
+                        <barButtonItem key="backBarButtonItem" title="Question 5" id="2bD-TI-16g"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="optionA" destination="BVP-58-MDo" id="8Cd-Uk-TWx"/>
+                        <outlet property="optionB" destination="1yU-X9-fn7" id="Qsj-9M-CAz"/>
+                        <outlet property="optionC" destination="p6m-U6-el9" id="43T-aB-z4Y"/>
+                        <outlet property="optionD" destination="83y-a1-Mcc" id="jul-J2-Ldc"/>
+                        <outlet property="optionE" destination="j9P-3J-k6x" id="izD-Jn-6dy"/>
+                        <outlet property="optionF" destination="z4W-UT-Nji" id="XwI-RE-egL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TYH-cT-bdV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5053.6000000000004" y="-564.46776611694156"/>
+        </scene>
+        <!--Question6 View Controller-->
+        <scene sceneID="CRa-aV-0BK">
+            <objects>
+                <viewController id="JaM-Bb-KBc" customClass="Question6ViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4h9-6M-H8j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6. Kapan terakhir kali Anda menunggak pembayaran pinjaman Anda?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jec-ml-DFr">
+                                <rect key="frame" x="36" y="225" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMi-dA-s5b">
+                                <rect key="frame" x="107" y="331" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Tidak Ada"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionATouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="37M-PK-WrT"/>
+                                    <action selector="optionATouched:" destination="JaM-Bb-KBc" eventType="touchUpInside" id="FVz-zQ-yKm"/>
+                                    <action selector="optionATouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="JrV-aj-bUF"/>
+                                    <action selector="optionATouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="KNd-iv-XAv"/>
+                                    <action selector="optionATouched:" destination="22i-z0-u59" eventType="touchUpInside" id="ea0-bB-Qkd"/>
+                                    <action selector="optionATouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="rrE-N3-EZu"/>
+                                    <segue destination="zxz-jm-cIX" kind="push" id="AkF-3c-4Hv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUU-4x-hW0">
+                                <rect key="frame" x="107" y="389" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Kurang dari 3 Bulan"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionBTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="0Wc-xj-TsY"/>
+                                    <action selector="optionBTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="5UV-58-Hao"/>
+                                    <action selector="optionBTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="76X-cM-TQc"/>
+                                    <action selector="optionBTouched:" destination="JaM-Bb-KBc" eventType="touchUpInside" id="Kou-be-2SA"/>
+                                    <action selector="optionBTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="qMc-Zp-XjP"/>
+                                    <action selector="optionBTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="zFN-1o-qJB"/>
+                                    <segue destination="zxz-jm-cIX" kind="push" id="9m7-Cj-74E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSr-GD-0Xs">
+                                <rect key="frame" x="107" y="447" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="3 - 6 Bulan lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionCTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="7ln-ds-JeT"/>
+                                    <action selector="optionCTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="8qx-J1-ugM"/>
+                                    <action selector="optionCTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="AbB-fb-5eE"/>
+                                    <action selector="optionCTouched:" destination="JaM-Bb-KBc" eventType="touchUpInside" id="DAz-U9-Yv2"/>
+                                    <action selector="optionCTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="Qcd-K8-Pg4"/>
+                                    <action selector="optionCTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="ts8-Iv-o7r"/>
+                                    <segue destination="zxz-jm-cIX" kind="push" id="mPn-uO-Mfg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qu4-RT-Wxq">
+                                <rect key="frame" x="107" y="505" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="6 bln - 2 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="2HT-nM-bAI"/>
+                                    <action selector="optionDTouched:" destination="JaM-Bb-KBc" eventType="touchUpInside" id="6TV-pe-Glh"/>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="Gz1-mf-OqU"/>
+                                    <action selector="optionDTouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="NEq-WQ-ly7"/>
+                                    <action selector="optionDTouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="fs9-S3-3Qa"/>
+                                    <action selector="optionDTouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="un5-lk-z5W"/>
+                                    <segue destination="zxz-jm-cIX" kind="push" id="x68-UX-PzU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hb-xE-j3f">
+                                <rect key="frame" x="107" y="563" width="200" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="2 - 4 tahun lalu"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="optionDTouched:" destination="22i-z0-u59" eventType="touchUpInside" id="Cwo-v7-XEO"/>
+                                    <action selector="optionETouched:" destination="3Tj-PY-6Yq" eventType="touchUpInside" id="2AX-a2-uHF"/>
+                                    <action selector="optionETouched:" destination="pxN-DY-dCj" eventType="touchUpInside" id="B54-Ak-hXM"/>
+                                    <action selector="optionETouched:" destination="Tlx-Fy-Ln0" eventType="touchUpInside" id="XEY-ph-AJj"/>
+                                    <action selector="optionETouched:" destination="JaM-Bb-KBc" eventType="touchUpInside" id="jE4-nA-eRs"/>
+                                    <action selector="optionETouched:" destination="sHz-Sd-0iV" eventType="touchUpInside" id="loK-ZB-FFc"/>
+                                    <segue destination="zxz-jm-cIX" kind="push" id="0VJ-Mt-k8n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="nNZ-de-MxH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="chZ-6b-NWe"/>
+                    <connections>
+                        <outlet property="optionA" destination="cMi-dA-s5b" id="mSf-qX-uN5"/>
+                        <outlet property="optionB" destination="PUU-4x-hW0" id="FSv-Nv-otG"/>
+                        <outlet property="optionC" destination="GSr-GD-0Xs" id="pMr-uM-tWU"/>
+                        <outlet property="optionD" destination="Qu4-RT-Wxq" id="1tI-RH-Yzq"/>
+                        <outlet property="optionE" destination="8Hb-xE-j3f" id="fqt-JH-Ug0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tr1-wx-Kyr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5788" y="-564.46776611694156"/>
+        </scene>
+        <!--Score View Controller-->
+        <scene sceneID="PGl-sx-jBS">
+            <objects>
+                <viewController id="zxz-jm-cIX" customClass="ScoreViewController" customModule="CreditScorer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1uw-vR-9me">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credit Rating Score:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51F-AC-LTK">
+                                <rect key="frame" x="36" y="335" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKf-Tp-vbw">
+                                <rect key="frame" x="36" y="463" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.45009386540000001" green="0.98132258650000004" blue="0.4743030667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="70"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="1bj-qH-jWK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NZo-Rx-lSr"/>
+                    <connections>
+                        <outlet property="scoreLabel" destination="NKf-Tp-vbw" id="tiy-hf-ibN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9QJ-ab-V7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6495" y="-564"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="StarCapitalLogo" width="1840" height="1000"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="AkF-3c-4Hv"/>
+        <segue reference="q9T-81-pUL"/>
+        <segue reference="nwF-bQ-R9Z"/>
+        <segue reference="jDV-GM-UAb"/>
+        <segue reference="hbW-Dq-LjM"/>
+        <segue reference="5hR-GF-emQ"/>
+    </inferredMetricsTieBreakers>
+</document>
